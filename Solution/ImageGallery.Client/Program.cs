@@ -4,7 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews()
-    .AddJsonOptions(configure => 
+    .AddJsonOptions(configure =>
         configure.JsonSerializerOptions.PropertyNamingPolicy = null);
 
 // create an HttpClient used for accessing the API
